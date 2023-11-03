@@ -22,24 +22,61 @@
       <header>
         <div class="container">
           <div class="logo">
-            <a href="#">Supergym</a>
+            <a class="logo__link" href="#"><img src="img/svg/logo.svg" alt="Логотип фитнес центра Supergym." width="120" height="26"></a>
           </div>
           <div class="contact">
             <a class="contact-phone" href="+78005555555">8-800-555-55-55</a>
           </div>
           <div class="hero">
-
+            <ul>
+              <li><span>Тренажёрный зал</span></li>
+              <li><span>Групповые занятия</span></li>
+              <li><span>Кардио-зона</span></li>
+            </ul>
+            <h2><span>Омск</span><span>Фитнес центр</span></h2>
+            <a href="#">Купить абонемент</a>
+            <div>
+              <picture>
+                <source type="image/webp" media="(max-width: 1365px)" srcset="img/hero-tablet.webp 1x, img/hero-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/hero.webp 1x, img/hero@2x.webp 2x">
+                <source media="(max-width: 1365px)" srcset="img/hero-tablet.png 1x, img/hero-tablet@2x.png 2x">
+                <img src="img/hero.png" srcset="img/hero@2x.png" alt="Воспитанник фитнес центра Supergym." width="500" height="524">
+              </picture>
+            </div>
           </div>
         </div>
       </header>
       <main>
-        <section class="intro">
+        <h1 class="visually-hidden">Supergym - самый большой фитнесс центр за Уралом.</h1>
+        <section>
           <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+            <h2>Тренажерный зал</h2>
+            <p>Просторный зал площадью 900 кв/м</p>
+            <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+            <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1365px)" srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/gym.webp 1x, img/gym@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/gym-mobile.png 1x, img/gym-mobile@2x.png 2x">
+              <source media="(max-width: 1365px)" srcset="img/gym-tablet.png 1x, img/gym-tablet@2x.png 2x">
+              <img src="img/gym.png" srcset="img/gym@2x.png" alt="Общий вид на тренажеры в зале." width="660" height="401">
+            </picture>
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/video-poster-mobile.webp 1x, img/video-poster-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1365px)" srcset="img/video-poster-tablet.webp 1x, img/video-poster-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/video-poster.webp 1x, img/video-poster@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/video-poster-mobile.png 1x, img/video-poster-mobile@2x.png 2x">
+              <source media="(max-width: 1365px)" srcset="img/video-poster-tablet.png 1x, img/video-poster-tablet@2x.png 2x">
+              <img src="img/video-poster.png" srcset="img/video-poster@2x.png" alt="Постер видео тренажерного зала." width="364" height="228">
+            </picture>
+            <button>
+              <span class="visually-hidden">Нажмите на кнопку для просмотра видео.</span>
+              <svg>
+                <use href="img/sprite.svg#play-button"></use>
+              </svg>
+            </button>
+
           </div>
         </section>
       </main>
