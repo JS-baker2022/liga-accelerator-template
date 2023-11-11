@@ -28,6 +28,9 @@
 @import "blocks/header/header";
 @import "blocks/header/hero";
 
+//main
+@import "blocks/main/gym/gym.scss";
+
 // ---------------------------------
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg

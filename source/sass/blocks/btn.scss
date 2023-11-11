@@ -18,6 +18,8 @@
   &--hero {
     border: 2px solid $color-default-white;
     background-color: transparent;
+    font-size: 12px;
+    line-height: 12px;
   }
 
   &:disabled {
