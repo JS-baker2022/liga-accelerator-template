@@ -1,6 +1,7 @@
 .btn {
   display: inline-flex;
   padding: 10px 20px;
+  text-transform: uppercase;
 
   color: $color-default-white;
 
@@ -12,6 +13,11 @@
 
   &--red {
     background-color: $color-torch-red;
+  }
+
+  &--hero {
+    border: 2px solid $color-default-white;
+    background-color: transparent;
   }
 
   &:disabled {
