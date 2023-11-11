@@ -19,23 +19,26 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container">
-          <div class="logo">
-            <a class="logo__link" href="#"><img src="img/svg/logo.svg" alt="Логотип фитнес центра Supergym." width="120" height="26"></a>
-          </div>
-          <div class="contact">
-            <a class="contact-phone" href="+78005555555">8-800-555-55-55</a>
-          </div>
-          <div class="hero">
-            <ul>
-              <li><span>Тренажёрный зал</span></li>
-              <li><span>Групповые занятия</span></li>
-              <li><span>Кардио-зона</span></li>
+      <header class="header">
+        <div class="container header__container">
+          <nav class="header__navigation">
+            <div class="header__logo">
+              <a class="header__logo-link" href="#"><img src="img/svg/logo.svg" alt="Логотип фитнес центра Supergym." width="120" height="26"></a>
+            </div>
+            <div class="header__contact">
+              <a class="header__contact-phone" href="+78005555555">8-800-555-55-55</a>
+            </div>
+          </nav>
+          <div class="header__hero hero">
+            <ul class="hero__list">
+              <li class="hero__list-item"><span>Тренажёрный зал</span></li>
+              <li class="hero__list-item"><span>Групповые занятия</span></li>
+              <li class="hero__list-item"><span>Кардио-зона</span></li>
             </ul>
-            <h2><span>Омск</span><span>Фитнес центр</span></h2>
-            <a href="#">Купить абонемент</a>
-            <div>
+            <h3 class="hero__title hero__title--city">Омск</h3>
+            <h2 class="hero__title">Фитнес центр</h2>
+            <a class="hero-btn btn btn--hero" href="#">Купить абонемент</a>
+            <div class="hero__image">
               <picture>
                 <source type="image/webp" media="(max-width: 1365px)" srcset="img/hero-tablet.webp 1x, img/hero-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/hero.webp 1x, img/hero@2x.webp 2x">
