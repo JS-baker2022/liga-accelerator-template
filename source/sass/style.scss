@@ -29,7 +29,9 @@
 @import "blocks/header/hero";
 
 //main
-@import "blocks/main/gym/gym.scss";
+@import "blocks/main/gym/gym";
+@import "blocks/main/subscription-price/subscription-price";
+@import "blocks/main/subscription-price/price-card";
 
 // ---------------------------------
 

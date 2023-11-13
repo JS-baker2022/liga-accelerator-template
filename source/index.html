@@ -121,7 +121,7 @@
                   <li class="subscription-price__price-item price-card">
                     <h4 class="price-card__title">С тренером</h4>
                     <p class="price-card__description">12 занятий</p>
-                    <p class="price-card__price">5000
+                    <p class="price-card__price" data-price="5000">5000
                       <svg width="30" height="42">
                         <use href="img/sprite.svg#ruble"></use>
                       </svg>
@@ -131,7 +131,7 @@
                   <li class="subscription-price__price-item price-card">
                     <h4 class="price-card__title">Дневной</h4>
                     <p class="price-card__description">с 8:00 до 17:00</p>
-                    <p class="price-card__price">1700
+                    <p class="price-card__price" data-price="1700">1700
                       <svg width="30" height="42">
                         <use href="img/sprite.svg#ruble"></use>
                       </svg>
@@ -141,7 +141,7 @@
                   <li class="subscription-price__price-item price-card">
                     <h4 class="price-card__title">Полный день</h4>
                     <p class="price-card__description">с 8:00 до 22:00</p>
-                    <p class="price-card__price">2700
+                    <p class="price-card__price" data-price="2700">2700
                       <svg width="30" height="42">
                         <use href="img/sprite.svg#ruble"></use>
                       </svg>
@@ -149,8 +149,15 @@
                     <a class="price-card__btn btn btn--price" href="#">Купить абонемент</a>
                   </li>
                 </ul>
+                <div class="subscription-price__image">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 1365px)" srcset="img/rogue-pancake-tablet.webp 1x, img/rogue-pancake-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/rogue-pancake.webp 1x, img/rogue-pancake@2x.webp 2x">
+                    <source media="(max-width: 1365px)" srcset="img/rogue-pancake-tablet.png 1x, img/rogue-pancake-tablet@2x.png 2x">
+                    <img src="img/rogue-pancake.png" srcset="img/rogue-pancake@2x.png" alt="Диски для штанги/гантели производителя Rogue." width="470" height="494">
+                  </picture>
+                </div>
               </div>
-
 
             </div>
           </div>
