@@ -38,7 +38,7 @@
               </ul>
               <h3 class="hero__title hero__title--city">Омск</h3>
               <h2 class="hero__title hero__title--name">Фитнес центр</h2>
-              <a class="hero-btn btn btn--hero" href="#">Купить абонемент</a>
+              <a class="hero-btn btn btn--hero" href="#price">Купить абонемент</a>
             </div>
             <div class="hero__image">
               <picture>
@@ -100,7 +100,7 @@
             </div>
           </div>
         </section>
-        <section class="subscription-price">
+        <section class="subscription-price" id="price">
           <h2 class="visually-hidden">Расчет стоимости абонемента для занятий в тренажерном зале Supergym.</h2>
           <div class="container">
             <div class="subscription-price__wrapper">
@@ -197,33 +197,106 @@
           <div class="container">
             <div class="jury__wrapper">
               <h3 class="jury__title">Жюри</h3>
-              <button class="jury-btn jury-btn--previous btn btn--juri"></button>
+              <button class="jury-btn jury-btn--previous btn btn--juri">
+                <span class="visually-hidden">Нажмите на кнопку для просмотра предыдущего фото.</span>
+                <svg width="16px" height="32px">
+                  <use href="img/sprite.svg#juri-arrow"></use>
+                </svg>
+              </button>
               <div class="jury__swiper">
                 <ul class="jury__list">
                   <li class="jury__item judge-card">
-                    <h4 class="judge-card__name"></h4>
                     <div class="judge-card__foto">
                       <picture>
-                        <source type="image/webp" media="(max-width: 767px)" srcset="img/-mobile.webp 1x, img/-mobile@2x.webp 2x">
-                        <source type="image/webp" media="(max-width: 1365px)" srcset="img/-tablet.webp 1x, img/-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/.webp 1x, img/@2x.webp 2x">
-                        <source media="(max-width: 767px)" srcset="img/-mobile.png 1x, img/-mobile@2x.png 2x">
-                        <source media="(max-width: 1365px)" srcset="img/-tablet.png 1x, img/-tablet@2x.png 2x">
-                        <img src="" alt="" width="260" height="294">
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/judge-1-mobile.webp 1x, img/judge-1-mobile@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 1365px)" srcset="img/judge-1-tablet.webp 1x, img/judge-1-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/judge-1.webp 1x, img/judge-1@2x.webp 2x">
+                        <source media="(max-width: 767px)" srcset="img/judge-1-mobile.png 1x, img/judge-1-mobile@2x.png 2x">
+                        <source media="(max-width: 1365px)" srcset="img/judge-1-tablet.png 1x, img/judge-1-tablet@2x.png 2x">
+                        <img src="img/judge-1.jpg" srcset="img/judge-1@2x.jpg" alt="Фото судьи №1 соревнований." width="260" height="294">
                       </picture>
                     </div>
                     <div class="judge-card__achievements">
-                      <h4 class="judge-card__achievements-name"></h4>
+                      <h4 class="judge-card__achievements-name">Анна Павлова</h4>
+                      <p class="judge-card__achievements-specialization">CrossFit</p>
                       <ul class="judge-card__achievements-list">
-                        <li class="judge-card__achievements-item"></li>
-                        <li class="judge-card__achievements-item"></li>
-                        <li class="judge-card__achievements-item"></li>
+                        <li class="judge-card__achievements-item">Certified Level 3 Trainer</li>
+                        <li class="judge-card__achievements-item">Победитель чемпионата России по CrossFit </li>
+                        <li class="judge-card__achievements-item">Опыт — 6 лет</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="jury__item judge-card">
+                    <div class="judge-card__foto">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/judge-2-mobile.webp 1x, img/judge-2-mobile@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 1365px)" srcset="img/judge-2-tablet.webp 1x, img/judge-2-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/judge-2.webp 1x, img/judge-2@2x.webp 2x">
+                        <source media="(max-width: 767px)" srcset="img/judge-2-mobile.png 1x, img/judge-2-mobile@2x.png 2x">
+                        <source media="(max-width: 1365px)" srcset="img/judge-2-tablet.png 1x, img/judge-2-tablet@2x.png 2x">
+                        <img src="img/judge-2.jpg" srcset="img/judge-2@2x.jpg" alt="Фото судьи №2 соревнований." width="260" height="294">
+                      </picture>
+                    </div>
+                    <div class="judge-card__achievements">
+                      <h4 class="judge-card__achievements-name">Алексей Лавров</h4>
+                      <p class="judge-card__achievements-specialization">CrossFit</p>
+                      <ul class="judge-card__achievements-list">
+                        <li class="judge-card__achievements-item">Certified Level 3 Trainer</li>
+                        <li class="judge-card__achievements-item">Победитель чемпионата России по CrossFit </li>
+                        <li class="judge-card__achievements-item">Опыт — 6 лет</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="jury__item judge-card">
+                    <div class="judge-card__foto">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/judge-3-mobile.webp 1x, img/judge-3-mobile@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 1365px)" srcset="img/judge-3-tablet.webp 1x, img/judge-3-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/judge-3.webp 1x, img/judge-3@2x.webp 2x">
+                        <source media="(max-width: 767px)" srcset="img/judge-3-mobile.png 1x, img/judge-3-mobile@2x.png 2x">
+                        <source media="(max-width: 1365px)" srcset="img/judge-3-tablet.png 1x, img/judge-3-tablet@2x.png 2x">
+                        <img src="img/judge-3.jpg" srcset="img/judge-3@2x.jpg" alt="Фото судьи №3 соревнований." width="260" height="294">
+                      </picture>
+                    </div>
+                    <div class="judge-card__achievements">
+                      <h4 class="judge-card__achievements-name">Александр Пашков</h4>
+                      <p class="judge-card__achievements-specialization">CrossFit</p>
+                      <ul class="judge-card__achievements-list">
+                        <li class="judge-card__achievements-item">Certified Level 3 Trainer</li>
+                        <li class="judge-card__achievements-item">Победитель чемпионата России по CrossFit </li>
+                        <li class="judge-card__achievements-item">Опыт — 6 лет</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="jury__item judge-card">
+                    <div class="judge-card__foto">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/judge-4-mobile.webp 1x, img/judge-4-mobile@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 1365px)" srcset="img/judge-4-tablet.webp 1x, img/judge-4-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/judge-4.webp 1x, img/judge-4@2x.webp 2x">
+                        <source media="(max-width: 767px)" srcset="img/judge-4-mobile.png 1x, img/judge-4-mobile@2x.png 2x">
+                        <source media="(max-width: 1365px)" srcset="img/judge-4-tablet.png 1x, img/judge-4-tablet@2x.png 2x">
+                        <img src="img/judge-4.jpg" srcset="img/judge-4@2x.jpg" alt="Фото судьи №4 соревнований." width="260" height="294">
+                      </picture>
+                    </div>
+                    <div class="judge-card__achievements">
+                      <h4 class="judge-card__achievements-name">Мария Кетова</h4>
+                      <p class="judge-card__achievements-specialization">CrossFit</p>
+                      <ul class="judge-card__achievements-list">
+                        <li class="judge-card__achievements-item">Certified Level 3 Trainer</li>
+                        <li class="judge-card__achievements-item">Победитель чемпионата России по CrossFit </li>
+                        <li class="judge-card__achievements-item">Опыт — 6 лет</li>
                       </ul>
                     </div>
                   </li>
                 </ul>
               </div>
-              <button class="jury-btn jury-btn--next btn btn--juri"></button>
+              <button class="jury-btn jury-btn--next btn btn--juri">
+                <span class="visually-hidden">Нажмите на кнопку для просмотра следующего фото.</span>
+                <svg width="16px" height="32px">
+                  <use href="img/sprite.svg#juri-arrow"></use>
+                </svg>
+              </button>
             </div>
 
           </div>

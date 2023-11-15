@@ -1,0 +1,54 @@
+.jury {
+padding-top: 60px;
+padding-bottom: 120px;
+}
+
+.jury__wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+
+}
+
+.jury__title {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 54px;
+  color: $color-sapphire;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.jury__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  overflow: hidden;
+  gap: 40px;
+}
+
+.jury-btn {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 58%;
+  border-radius: 50%;
+  z-index: 2;
+  background-color: $color-default-white;
+
+  &--previous {
+    left: -5%;
+  }
+
+  &--next {
+    right: -8%;
+  }
+}
+
+.jury-btn--next svg {
+  transform: rotate(180deg);
+}

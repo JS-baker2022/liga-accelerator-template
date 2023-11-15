@@ -1,0 +1,60 @@
+.judge-card {
+  display: flex;
+  position: relative;
+}
+
+.judge-card__achievements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: $color-default-white;
+  display: flex;
+  flex-direction: column;
+}
+
+.judge-card__achievements-name {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin-top: auto;
+  margin-bottom: 26px;
+  align-self: center;
+
+}
+
+.judge-card__achievements-specialization {
+  display: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  color: $color-spindle;
+}
+
+.judge-card__achievements-list {
+  display: none;
+  list-style-type: disc;
+}
+
+.judge-card:hover .judge-card__achievements {
+  background-color: $color-sapphire;
+  opacity: 0.8;
+}
+
+.judge-card:hover .judge-card__achievements-name {
+  margin-top: 45px;
+  margin-bottom: 4px;
+}
+
+.judge-card:hover .judge-card__achievements-specialization {
+  display: block;
+  align-self: center;
+  margin-top: 4px;
+}
+
+.judge-card:hover .judge-card__achievements-list {
+  display: block;
+}
