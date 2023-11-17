@@ -8,6 +8,16 @@
   flex-direction: column;
   position: relative;
   align-items: center;
+  row-gap: 46px;
+}
+
+.feedback__title {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 54px;
+  color: $color-sapphire;
 }
 
 .feedback__previous {
