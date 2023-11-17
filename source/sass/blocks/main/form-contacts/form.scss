@@ -1,0 +1,42 @@
+.form {
+  width: 683px;
+  background-color: $color-sapphire;
+  color: $color-default-white;
+  padding: 60px 80px 60px 100px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 28px;
+}
+
+.form__title {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 54px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.form__form {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+}
+
+.form__label {
+  display: flex;
+}
+
+.form__input {
+  width: 100%;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: $color-default-white;
+}
+
+.form__input::placeholder {
+  color: $color-default-white;
+}

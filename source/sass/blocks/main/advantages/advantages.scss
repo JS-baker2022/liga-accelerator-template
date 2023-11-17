@@ -1,6 +1,7 @@
 .advantages {
   padding-top: 120px;
   padding-bottom: 120px;
+  background-color: $color-ghost-white;
 }
 
 .advantages__wrapper {
@@ -28,6 +29,7 @@
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 240px 1fr;
+  column-gap: 60px;
 }
 
 .advantages__item {

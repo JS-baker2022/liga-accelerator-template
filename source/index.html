@@ -360,21 +360,22 @@
         </section>
         <section class="stocks">
           <div class="container">
+            <h2 class="stocks__title">Акции</h2>
             <div class="stocks-wrapper">
               <article class="stocks__ticket-for-year">
                 <div class="stocks__ticket-for-year-description">
                   <h4>Год</h4>
-                  <p>4999</p>
+                  <span>4999</span>
                   <p>Безлимитный абонемент в тренажерный зал</p>
                   <a href="#">Подробнее</a>
                 </div>
                 <div class="stocks__ticket-for-year-bunner">
                   <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/advantages-bunner-mobile.webp 1x, img/advantages-bunner-mobile@2x.webp 2x">
-                    <source type="image/webp" media="(max-width: 1365px)" srcset="img/advantages-bunner-tablet.webp 1x, img/advantages-bunner-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="img/advantages-bunner.webp 1x, img/advantages-bunner@2x.webp 2x">
-                    <source media="(max-width: 767px)" srcset="img/advantages-bunner-mobile.png 1x, img/advantages-bunner-mobile@2x.png 2x">
-                    <source media="(max-width: 1365px)" srcset="img/advantages-bunner-tablet.png 1x, img/advantages-bunner-tablet@2x.png 2x">
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/advantages-bunner-mobile.webp 1x, img/advantages-bunner-mobile@2x.webp 2x" width="290" height="330">
+                    <source type="image/webp" media="(max-width: 1365px)" srcset="img/advantages-bunner-tablet.webp 1x, img/advantages-bunner-tablet@2x.webp 2x" width="399" height="462">
+                    <source type="image/webp" srcset="img/advantages-bunner.webp 1x, img/advantages-bunner@2x.webp 2x" width="280" height="462">
+                    <source media="(max-width: 767px)" srcset="img/advantages-bunner-mobile.png 1x, img/advantages-bunner-mobile@2x.png 2x" width="290" height="330">
+                    <source media="(max-width: 1365px)" srcset="img/advantages-bunner-tablet.png 1x, img/advantages-bunner-tablet@2x.png 2x" width="399" height="462">
                     <img src="img/advantages-bunner.jpg" srcset="img/advantages-bunner@2x.jpg" alt="Улыбающаяся девушка одетая для занятия фитнесом." width="280" height="462">
                   </picture>
                 </div>
@@ -387,9 +388,11 @@
                 </div>
               </article>
               <article class="stocks__corporate-discount">
-                <h4>Скидка 20%</h4>
-                <p>Корпоративный фитнес с командой</p>
-                <a href="#">Подробнее</a>
+                <div class="stocks__corporate-discount-description">
+                  <h4>Скидка 20%</h4>
+                  <p>Корпоративный фитнес с командой</p>
+                  <a href="#">Подробнее</a>
+                </div>
               </article>
             </div>
           </div>
@@ -403,27 +406,35 @@
         <section class="form-contacts">
           <div class="container">
             <div class="form-contacts__form form">
-              <h3 class="form__title">Бесплатное занятие </h3>
-              <form action="form__form"></form>
+              <h3 class="form__title">Бесплатное занятие</h3>
+              <form class="form__form" action="https://echo.htmlacademy.ru/">
+                <label class="form__label">
+                  <input class="form__input" type="text" name="person-name" placeholder="Имя" required>
+                </label>
+                <label class="form__label">
+                  <input class="form__input" type="tel" name="phone-number" placeholder="Телефон" required>
+                </label>
+              </form>
+              <button class="form_btn btn btn--form" type="submit">Отправить</button>
             </div>
             <div class="form-contacts__contacts contacts">
               <h3 class="contacts__title">Контакты</h3>
-              <ul>
-                <li>
-                  <h5>Адрес</h5>
-                  <p>г. Омск, ул. 60 лет Октября, 7</p>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <h5 class="contacts__item-title">Адрес</h5>
+                  <p class="contacts__item-description contacts__item-description--adress">г. Омск, ул. 60 лет Октября, 7</p>
                 </li>
-                <li>
-                  <h5>Телефон</h5>
-                  <a href="">8-800-555-55-55</a>
+                <li class="contacts__item">
+                  <h5 class="contacts__item-title">Телефон</h5>
+                  <a class="contacts__item-link" href="">8-800-555-55-55</a>
                 </li>
-                <li>
-                  <h5>График работы:</h5>
-                  <p>Пн-Вс: с 8:00 до 22:00</p>
+                <li class="contacts__item">
+                  <h5 class="contacts__item-title">График работы:</h5>
+                  <p class="contacts__item-description contacts__item-description--time-work">Пн-Вс: с 8:00 до 22:00</p>
                 </li>
-                <li>
-                  <h5>Email:</h5>
-                  <a href="">omsk@supergym.ru</a>
+                <li class="contacts__item">
+                  <h5 class="contacts__item-title">Email:</h5>
+                  <a class="contacts__item-link" href="">omsk@supergym.ru</a>
                 </li>
               </ul>
             </div>
@@ -433,18 +444,32 @@
       <footer class="footer">
         <div class="container">
           <div class="footer__wrapper">
-            <div class="footer__logo"></div>
+            <div class="footer__logo">
+              <a class="header__logo-link" href="#"><img src="img/svg/logo.svg" alt="Логотип фитнес центра Supergym." width="109" height="24"></a>
+            </div>
             <div class="footer__nav">
-              <a href="">Услуги</a>
-              <a href="">Абонементы</a>
-              <a href="">Акции</a>
-              <a href="">Тренеры</a>
-              <a href="">Расписание</a>
+              <a class="footer__nav-item" href="#">Услуги</a>
+              <a class="footer__nav-item" href="#">Абонементы</a>
+              <a class="footer__nav-item" href="#">Акции</a>
+              <a class="footer__nav-item" href="#">Тренеры</a>
+              <a class="footer__nav-item" href="#">Расписание</a>
             </div>
             <div class="footer__social">
-              <a href=""><span class="visually-hidden">Мы в соцсети ВКонтакте.</span></a>
-              <a href=""><span class="visually-hidden">Мы в соцсети Однокласники.</span></a>
-              <a href=""><span class="visually-hidden">Мы в соцсети Reddit.</span></a>
+              <a class="footer__social__link" href="https://vk.com/htmlacademy" target="_blank"><span class="visually-hidden">Мы в соцсети ВКонтакте.</span>
+                <svg width="25" height="25">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+              <a class="footer__social__link" href="https://ok.ru/htmlacademy" target="_blank"><span class="visually-hidden">Мы в соцсети Однокласники.</span>
+                <svg width="25" height="25">
+                  <use xlink:href="img/sprite.svg#icon-ok"></use>
+                </svg>
+              </a>
+              <a class="footer__social__link" href="https://www.reddit.com" target="_blank"><span class="visually-hidden">Мы в соцсети Reddit.</span>
+                <svg width="25" height="25">
+                  <use xlink:href="img/sprite.svg#icon-reddit"></use>
+                </svg>
+              </a>
             </div>
           </div>
 

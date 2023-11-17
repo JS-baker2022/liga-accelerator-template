@@ -1,14 +1,27 @@
 .advantages-card {
   display: flex;
   column-gap: 30px;
+  max-width: 340px;
 
   &--special {
     background-color: $color-resolution-blue;
     color: $color-ghost-white;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 34px;
+    row-gap: 42px;
+    text-align: center;
   }
 }
 
+
 .advantages-card__value {
+  background: linear-gradient(128deg, #D10A42 0%, #0041CA 45.58%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+
   & :first-child {
     font-size: 70px;
     font-style: normal;
@@ -16,10 +29,6 @@
     line-height: 70px;
     margin-top: 0;
     margin-bottom: 0;
-    background: linear-gradient(128deg, #D10A42 0%, #0041CA 45.58%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 
   & :last-child {
@@ -29,10 +38,6 @@
     line-height: 22px;
     margin-top: 0;
     margin-bottom: 0;
-    background: linear-gradient(128deg, #D10A42 0%, #0041CA 45.58%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 
   &--special {
@@ -41,6 +46,23 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: $color-default-white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+
+    & :first-child {
+      font-size: 70px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 70px;
+    }
+
+    & :last-child  {
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 26px;
+    }
 
   }
 }
@@ -65,5 +87,21 @@
     line-height: 24px;
     margin-top: 0;
     margin-bottom: 0;
+  }
+
+  &--special {
+    background: $color-default-white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: $color-default-white;
+
+
+    & :first-child {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+    }
   }
 }
