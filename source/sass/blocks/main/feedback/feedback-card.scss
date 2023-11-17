@@ -1,0 +1,15 @@
+.feedback-card {
+  width: 100%;
+  padding: 60px;
+  display: flex;
+  column-gap: 30px;
+  background-color: $color-resolution-blue;
+}
+
+.feedback__image {
+  width: 80px;
+}
+
+.feedback__text {
+  width: 330px;
+}
