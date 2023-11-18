@@ -69,9 +69,8 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  position: relative;
   z-index: 2;
+  column-gap: 40px;
 
   @include vp-1365 {
     flex-direction: column;

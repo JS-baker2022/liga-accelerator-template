@@ -1,4 +1,8 @@
 // Vendor
+@import "vendor/accordion";
+@import "vendor/data-accordion";
+@import "vendor/data-tabs";
+@import "vendor/tabs";
 // ---------------------------------
 
 @import "vendor/normalize";
@@ -38,12 +42,15 @@
 @import "blocks/main/advantages/advantages";
 @import "blocks/main/advantages/advantages-card";
 @import "blocks/main/stocks/stocks";
+@import "blocks/main/faq/faq";
 @import "blocks/main/feedback/feedback";
 @import "blocks/main/feedback/feedback-card";
 @import "blocks/main/form-contacts/form-contacts";
 @import "blocks/main/form-contacts/form";
 @import "blocks/main/form-contacts/contacts";
-@import "blocks/main/footer/footer";
+
+//footer
+@import "blocks/footer/footer";
 
 // ---------------------------------
 
