@@ -3,6 +3,8 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initTabs} from './modules/tabs/init-tabs';
 import {initAccordions} from './modules/accordion/init-accordion';
+import {initJurySlider} from './modules/swiper/jury-swiper';
+import {initFeedbackSwiper} from './modules/swiper/feedback-swiper';
 
 // ---------------------------------
 
@@ -25,6 +27,8 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     initTabs();
     initAccordions();
+    initJurySlider();
+    initFeedbackSwiper();
   });
 });
 

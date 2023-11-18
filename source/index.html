@@ -261,22 +261,23 @@
           <div class="container">
             <div class="jury__wrapper">
               <h3 class="jury__title">Жюри</h3>
-              <button class="jury-btn jury-btn--previous btn btn--juri">
-                <span class="visually-hidden">Нажмите на кнопку для просмотра предыдущего фото.</span>
-                <svg width="16px" height="32px">
-                  <use href="img/sprite.svg#juri-arrow"></use>
-                </svg>
-              </button>
-              <div class="jury__swiper">
-                <ul class="jury__list">
-                  <li class="jury__item judge-card">
+
+              <div class="jury__swiper swiper">
+                <button class="jury-btn jury-btn--previous btn btn--juri swiper-button-prev" data-slider-prev-button="jury">
+                  <span class="visually-hidden">Нажмите на кнопку для просмотра предыдущего фото.</span>
+                  <svg width="16px" height="32px">
+                    <use href="img/sprite.svg#juri-arrow"></use>
+                  </svg>
+                </button>
+                <ul class="jury__list swiper-wrapper" data-slider-wrapper="jury">
+                  <li class="jury__item judge-card swiper-slide">
                     <div class="judge-card__foto">
                       <picture>
-                        <source type="image/webp" media="(max-width: 767px)" srcset="img/judge-1-mobile.webp 1x, img/judge-1-mobile@2x.webp 2x">
-                        <source type="image/webp" media="(max-width: 1365px)" srcset="img/judge-1-tablet.webp 1x, img/judge-1-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/judge-1.webp 1x, img/judge-1@2x.webp 2x">
-                        <source media="(max-width: 767px)" srcset="img/judge-1-mobile.png 1x, img/judge-1-mobile@2x.png 2x">
-                        <source media="(max-width: 1365px)" srcset="img/judge-1-tablet.png 1x, img/judge-1-tablet@2x.png 2x">
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/judge-1-mobile.webp 1x, img/judge-1-mobile@2x.webp 2x" width="226" height="274">
+                        <source type="image/webp" media="(max-width: 1365px)" srcset="img/judge-1-tablet.webp 1x, img/judge-1-tablet@2x.webp 2x" width="268" height="294">
+                        <source type="image/webp" srcset="img/judge-1.webp 1x, img/judge-1@2x.webp 2x" width="260" height="294">
+                        <source media="(max-width: 767px)" srcset="img/judge-1-mobile.png 1x, img/judge-1-mobile@2x.png 2x" width="226" height="274">
+                        <source media="(max-width: 1365px)" srcset="img/judge-1-tablet.png 1x, img/judge-1-tablet@2x.png 2x" width="268" height="294">
                         <img src="img/judge-1.jpg" srcset="img/judge-1@2x.jpg" alt="Фото судьи №1 соревнований." width="260" height="294">
                       </picture>
                     </div>
@@ -290,14 +291,14 @@
                       </ul>
                     </div>
                   </li>
-                  <li class="jury__item judge-card">
+                  <li class="jury__item judge-card swiper-slide">
                     <div class="judge-card__foto">
                       <picture>
-                        <source type="image/webp" media="(max-width: 767px)" srcset="img/judge-2-mobile.webp 1x, img/judge-2-mobile@2x.webp 2x">
-                        <source type="image/webp" media="(max-width: 1365px)" srcset="img/judge-2-tablet.webp 1x, img/judge-2-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/judge-2.webp 1x, img/judge-2@2x.webp 2x">
-                        <source media="(max-width: 767px)" srcset="img/judge-2-mobile.png 1x, img/judge-2-mobile@2x.png 2x">
-                        <source media="(max-width: 1365px)" srcset="img/judge-2-tablet.png 1x, img/judge-2-tablet@2x.png 2x">
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/judge-2-mobile.webp 1x, img/judge-2-mobile@2x.webp 2x" width="226" height="274">
+                        <source type="image/webp" media="(max-width: 1365px)" srcset="img/judge-2-tablet.webp 1x, img/judge-2-tablet@2x.webp 2x" width="268" height="294">
+                        <source type="image/webp" srcset="img/judge-2.webp 1x, img/judge-2@2x.webp 2x" width="260" height="294">
+                        <source media="(max-width: 767px)" srcset="img/judge-2-mobile.png 1x, img/judge-2-mobile@2x.png 2x" width="226" height="274">
+                        <source media="(max-width: 1365px)" srcset="img/judge-2-tablet.png 1x, img/judge-2-tablet@2x.png 2x" width="268" height="294">
                         <img src="img/judge-2.jpg" srcset="img/judge-2@2x.jpg" alt="Фото судьи №2 соревнований." width="260" height="294">
                       </picture>
                     </div>
@@ -311,14 +312,14 @@
                       </ul>
                     </div>
                   </li>
-                  <li class="jury__item judge-card">
+                  <li class="jury__item judge-card swiper-slide">
                     <div class="judge-card__foto">
                       <picture>
-                        <source type="image/webp" media="(max-width: 767px)" srcset="img/judge-3-mobile.webp 1x, img/judge-3-mobile@2x.webp 2x">
-                        <source type="image/webp" media="(max-width: 1365px)" srcset="img/judge-3-tablet.webp 1x, img/judge-3-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/judge-3.webp 1x, img/judge-3@2x.webp 2x">
-                        <source media="(max-width: 767px)" srcset="img/judge-3-mobile.png 1x, img/judge-3-mobile@2x.png 2x">
-                        <source media="(max-width: 1365px)" srcset="img/judge-3-tablet.png 1x, img/judge-3-tablet@2x.png 2x">
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/judge-3-mobile.webp 1x, img/judge-3-mobile@2x.webp 2x" width="226" height="274">
+                        <source type="image/webp" media="(max-width: 1365px)" srcset="img/judge-3-tablet.webp 1x, img/judge-3-tablet@2x.webp 2x" width="268" height="294">
+                        <source type="image/webp" srcset="img/judge-3.webp 1x, img/judge-3@2x.webp 2x" width="260" height="294">
+                        <source media="(max-width: 767px)" srcset="img/judge-3-mobile.png 1x, img/judge-3-mobile@2x.png 2x" width="226" height="274">
+                        <source media="(max-width: 1365px)" srcset="img/judge-3-tablet.png 1x, img/judge-3-tablet@2x.png 2x" width="268" height="294">
                         <img src="img/judge-3.jpg" srcset="img/judge-3@2x.jpg" alt="Фото судьи №3 соревнований." width="260" height="294">
                       </picture>
                     </div>
@@ -332,14 +333,14 @@
                       </ul>
                     </div>
                   </li>
-                  <li class="jury__item judge-card">
+                  <li class="jury__item judge-card swiper-slide">
                     <div class="judge-card__foto">
                       <picture>
-                        <source type="image/webp" media="(max-width: 767px)" srcset="img/judge-4-mobile.webp 1x, img/judge-4-mobile@2x.webp 2x">
-                        <source type="image/webp" media="(max-width: 1365px)" srcset="img/judge-4-tablet.webp 1x, img/judge-4-tablet@2x.webp 2x">
-                        <source type="image/webp" srcset="img/judge-4.webp 1x, img/judge-4@2x.webp 2x">
-                        <source media="(max-width: 767px)" srcset="img/judge-4-mobile.png 1x, img/judge-4-mobile@2x.png 2x">
-                        <source media="(max-width: 1365px)" srcset="img/judge-4-tablet.png 1x, img/judge-4-tablet@2x.png 2x">
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/judge-4-mobile.webp 1x, img/judge-4-mobile@2x.webp 2x" width="226" height="274">
+                        <source type="image/webp" media="(max-width: 1365px)" srcset="img/judge-4-tablet.webp 1x, img/judge-4-tablet@2x.webp 2x" width="268" height="294">
+                        <source type="image/webp" srcset="img/judge-4.webp 1x, img/judge-4@2x.webp 2x" width="260" height="294">
+                        <source media="(max-width: 767px)" srcset="img/judge-4-mobile.png 1x, img/judge-4-mobile@2x.png 2x" width="226" height="274">
+                        <source media="(max-width: 1365px)" srcset="img/judge-4-tablet.png 1x, img/judge-4-tablet@2x.png 2x" width="268" height="294">
                         <img src="img/judge-4.jpg" srcset="img/judge-4@2x.jpg" alt="Фото судьи №4 соревнований." width="260" height="294">
                       </picture>
                     </div>
@@ -353,14 +354,99 @@
                       </ul>
                     </div>
                   </li>
+                  <li class="jury__item judge-card swiper-slide">
+                    <div class="judge-card__foto">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/judge-1-mobile.webp 1x, img/judge-1-mobile@2x.webp 2x" width="226" height="274">
+                        <source type="image/webp" media="(max-width: 1365px)" srcset="img/judge-1-tablet.webp 1x, img/judge-1-tablet@2x.webp 2x" width="268" height="294">
+                        <source type="image/webp" srcset="img/judge-1.webp 1x, img/judge-1@2x.webp 2x" width="260" height="294">
+                        <source media="(max-width: 767px)" srcset="img/judge-1-mobile.png 1x, img/judge-1-mobile@2x.png 2x" width="226" height="274">
+                        <source media="(max-width: 1365px)" srcset="img/judge-1-tablet.png 1x, img/judge-1-tablet@2x.png 2x" width="268" height="294">
+                        <img src="img/judge-1.jpg" srcset="img/judge-1@2x.jpg" alt="Фото судьи №1 соревнований." width="260" height="294">
+                      </picture>
+                    </div>
+                    <div class="judge-card__achievements">
+                      <h4 class="judge-card__achievements-name">Анна Павлова-2</h4>
+                      <p class="judge-card__achievements-specialization">CrossFit</p>
+                      <ul class="judge-card__achievements-list">
+                        <li class="judge-card__achievements-item">Certified Level 3 Trainer</li>
+                        <li class="judge-card__achievements-item">Победитель чемпионата России по CrossFit </li>
+                        <li class="judge-card__achievements-item">Опыт — 6 лет</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="jury__item judge-card swiper-slide">
+                    <div class="judge-card__foto">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/judge-2-mobile.webp 1x, img/judge-2-mobile@2x.webp 2x" width="226" height="274">
+                        <source type="image/webp" media="(max-width: 1365px)" srcset="img/judge-2-tablet.webp 1x, img/judge-2-tablet@2x.webp 2x" width="268" height="294">
+                        <source type="image/webp" srcset="img/judge-2.webp 1x, img/judge-2@2x.webp 2x" width="260" height="294">
+                        <source media="(max-width: 767px)" srcset="img/judge-2-mobile.png 1x, img/judge-2-mobile@2x.png 2x" width="226" height="274">
+                        <source media="(max-width: 1365px)" srcset="img/judge-2-tablet.png 1x, img/judge-2-tablet@2x.png 2x" width="268" height="294">
+                        <img src="img/judge-2.jpg" srcset="img/judge-2@2x.jpg" alt="Фото судьи №2 соревнований." width="260" height="294">
+                      </picture>
+                    </div>
+                    <div class="judge-card__achievements">
+                      <h4 class="judge-card__achievements-name">Алексей Лавров-2</h4>
+                      <p class="judge-card__achievements-specialization">CrossFit</p>
+                      <ul class="judge-card__achievements-list">
+                        <li class="judge-card__achievements-item">Certified Level 3 Trainer</li>
+                        <li class="judge-card__achievements-item">Победитель чемпионата России по CrossFit </li>
+                        <li class="judge-card__achievements-item">Опыт — 6 лет</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="jury__item judge-card swiper-slide">
+                    <div class="judge-card__foto">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/judge-3-mobile.webp 1x, img/judge-3-mobile@2x.webp 2x" width="226" height="274">
+                        <source type="image/webp" media="(max-width: 1365px)" srcset="img/judge-3-tablet.webp 1x, img/judge-3-tablet@2x.webp 2x" width="268" height="294">
+                        <source type="image/webp" srcset="img/judge-3.webp 1x, img/judge-3@2x.webp 2x" width="260" height="294">
+                        <source media="(max-width: 767px)" srcset="img/judge-3-mobile.png 1x, img/judge-3-mobile@2x.png 2x" width="226" height="274">
+                        <source media="(max-width: 1365px)" srcset="img/judge-3-tablet.png 1x, img/judge-3-tablet@2x.png 2x" width="268" height="294">
+                        <img src="img/judge-3.jpg" srcset="img/judge-3@2x.jpg" alt="Фото судьи №3 соревнований." width="260" height="294">
+                      </picture>
+                    </div>
+                    <div class="judge-card__achievements">
+                      <h4 class="judge-card__achievements-name">Александр Пашков-2</h4>
+                      <p class="judge-card__achievements-specialization">CrossFit</p>
+                      <ul class="judge-card__achievements-list">
+                        <li class="judge-card__achievements-item">Certified Level 3 Trainer</li>
+                        <li class="judge-card__achievements-item">Победитель чемпионата России по CrossFit </li>
+                        <li class="judge-card__achievements-item">Опыт — 6 лет</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="jury__item judge-card swiper-slide">
+                    <div class="judge-card__foto">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/judge-4-mobile.webp 1x, img/judge-4-mobile@2x.webp 2x" width="226" height="274">
+                        <source type="image/webp" media="(max-width: 1365px)" srcset="img/judge-4-tablet.webp 1x, img/judge-4-tablet@2x.webp 2x" width="268" height="294">
+                        <source type="image/webp" srcset="img/judge-4.webp 1x, img/judge-4@2x.webp 2x" width="260" height="294">
+                        <source media="(max-width: 767px)" srcset="img/judge-4-mobile.png 1x, img/judge-4-mobile@2x.png 2x" width="226" height="274">
+                        <source media="(max-width: 1365px)" srcset="img/judge-4-tablet.png 1x, img/judge-4-tablet@2x.png 2x" width="268" height="294">
+                        <img src="img/judge-4.jpg" srcset="img/judge-4@2x.jpg" alt="Фото судьи №4 соревнований." width="260" height="294">
+                      </picture>
+                    </div>
+                    <div class="judge-card__achievements">
+                      <h4 class="judge-card__achievements-name">Мария Кетова-2</h4>
+                      <p class="judge-card__achievements-specialization">CrossFit</p>
+                      <ul class="judge-card__achievements-list">
+                        <li class="judge-card__achievements-item">Certified Level 3 Trainer</li>
+                        <li class="judge-card__achievements-item">Победитель чемпионата России по CrossFit </li>
+                        <li class="judge-card__achievements-item">Опыт — 6 лет</li>
+                      </ul>
+                    </div>
+                  </li>
                 </ul>
+                <button class="jury-btn jury-btn--next btn btn--juri swiper-button-next" data-slider-next-button="jury">
+                  <span class="visually-hidden">Нажмите на кнопку для просмотра следующего фото.</span>
+                  <svg width="16px" height="32px">
+                    <use href="img/sprite.svg#juri-arrow"></use>
+                  </svg>
+                </button>
               </div>
-              <button class="jury-btn jury-btn--next btn btn--juri">
-                <span class="visually-hidden">Нажмите на кнопку для просмотра следующего фото.</span>
-                <svg width="16px" height="32px">
-                  <use href="img/sprite.svg#juri-arrow"></use>
-                </svg>
-              </button>
+
             </div>
           </div>
         </section>
@@ -705,16 +791,16 @@
         </section>
         <section class="feedback">
           <div class="container">
-            <div class="feedback__wrapper">
+            <div class="feedback__wrapper swiper">
               <h2 class="feedback__title">Отзывы</h2>
-              <button class="feedback__previous">
+              <button class="feedback__previous swiper-button-prev" data-slider-prev-button="feedback">
                 <svg width="16px" height="32px">
                   <use href="img/sprite.svg#juri-arrow"></use>
                 </svg>
               </button>
               <div class="feedback__list-wrapper">
-                <ul class="feedback__list">
-                  <li class="feedback__item feedback-card">
+                <ul class="feedback__list swiper-wrapper" data-slider-wrapper="feedback">
+                  <li class="feedback__item feedback-card swiper-slide">
                     <div class="feedback__image">
                       <picture>
                         <source type="image/webp" media="(max-width: 767px)" srcset="img/feedback-1-mobile.webp 1x, img/feedback-1-mobile@2x.webp 2x" width="68" height="68">
@@ -728,7 +814,7 @@
                       <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
                     </div>
                   </li>
-                  <li class="feedback__item feedback-card">
+                  <li class="feedback__item feedback-card swiper-slide">
                     <div class="feedback__image">
                       <picture>
                         <source type="image/webp" media="(max-width: 767px)" srcset="img/feedback-1-mobile.webp 1x, img/feedback-1-mobile@2x.webp 2x" width="68" height="68">
@@ -738,13 +824,13 @@
                       </picture>
                     </div>
                     <div class="feedback__text">
-                      <p>Анна Орлова</p>
+                      <p>Анна Орлова-2</p>
                       <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
                     </div>
                   </li>
                 </ul>
               </div>
-              <button class="feedback__next">
+              <button class="feedback__next swiper-button-next" data-slider-next-button="feedback">
                 <svg width="16px" height="32px">
                   <use href="img/sprite.svg#juri-arrow"></use>
                 </svg>
