@@ -38,3 +38,21 @@
     line-height: 22px;
   }
 }
+
+.header__logo {
+
+  &--map {
+    background-color: $color-black-russian;
+  }
+}
+
+.header__logo-link {
+
+  &--map {
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+
+  }
+}

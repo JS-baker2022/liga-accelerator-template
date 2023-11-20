@@ -7,7 +7,7 @@
 
 @import "vendor/normalize";
 // Swiper 8.4.7
-@import "vendor/swiper";
+//@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -37,14 +37,14 @@
 @import "blocks/main/subscription-price/subscription-price";
 @import "blocks/main/subscription-price/price-card";
 @import "blocks/main/games/games";
-//@import "blocks/main/jury/jury";
+@import "blocks/main/jury/jury";
 @import "blocks/main/jury/judge-card";
 @import "blocks/main/advantages/advantages";
 @import "blocks/main/advantages/advantages-card";
 @import "blocks/main/stocks/stocks";
 @import "blocks/main/faq/faq";
-//@import "blocks/main/feedback/feedback";
-//@import "blocks/main/feedback/feedback-card";
+@import "blocks/main/feedback/feedback";
+@import "blocks/main/feedback/feedback-card";
 @import "blocks/main/form-contacts/form-contacts";
 @import "blocks/main/form-contacts/form";
 @import "blocks/main/form-contacts/contacts";
